@@ -1,4 +1,6 @@
-const data = {
+import { IData } from '../types';
+
+const data: IData = {
   fio: 'Shmatko Yevhen Olehovich',
   description:
     'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique repellendus rerum quia iste est itaque ut, libero maxime voluptatibus ullam eum enim. Quia, eos optio aliquid voluptate iste deserunt natus eius voluptas doloribus debitis illo quis adipisci quam dolore nam laboriosam mollitia dolor. Perferendis molestias iure maxime, corporis unde quia.',
