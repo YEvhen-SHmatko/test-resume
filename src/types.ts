@@ -20,6 +20,12 @@ export interface IData {
   skils: ISkilItem[];
   fio: string;
   description: string;
-  projects: IProject[];
-  works: IWork[];
+  projects: {
+    title: string;
+    list: IProject[];
+  };
+  works: {
+    title: string;
+    list: IWork[];
+  };
 }

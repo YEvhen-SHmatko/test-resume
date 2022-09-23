@@ -32,8 +32,8 @@ const App: React.FC = () => {
         <section className="content">
           <h1 className="fio">{data.fio}</h1>
           <p className="description">{data.description}</p>
-          <ProjectsComponent title="Projects" list={data.projects} />
-          <WorksComponent title="History work" list={data.works} />
+          <ProjectsComponent title={data.projects.title} list={data.projects.list} />
+          <WorksComponent title={data.works.title} list={data.works.list} />
         </section>
       </main>
     </div>
