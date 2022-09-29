@@ -3,7 +3,7 @@
 import React from 'react';
 
 import { IData } from './types';
-import * as mocks from './languages';
+import languages from './languages';
 import { SkilComponent, ProjectsComponent, WorksComponent } from './components';
 import Localization from './components/Localization/Localization';
 
@@ -14,10 +14,7 @@ const App: React.FC = () => {
 
   React.useEffect(() => {
     const getData = async (): Promise<IData | null> => {
-      if (currentLocale === 'en') return mocks.EN;
-      if (currentLocale === 'ua') return mocks.ua;
-      if (currentLocale === 'es') return mocks.es;
-      return null;
+      return languages[currentLocale].data || null;
     };
 
     getData().then((data) => {
