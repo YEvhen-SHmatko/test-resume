@@ -1,4 +1,5 @@
 import React from 'react';
+
 const localization: Record<string, { code: string; title: string }> = {
   en: {
     code: 'en',
