@@ -4,7 +4,6 @@
   box-sizing: border-box;
   /* border: 1px solid #000; */
 }
-
 .description {
   padding-left: 10px;
   color: dimgray;
@@ -28,6 +27,7 @@
 }
 
 .sidebar {
+  position: relative;
   padding: 36px 0 10px;
   background: rgb(1, 43, 20);
   height: 100%;
@@ -38,6 +38,11 @@
   gap: 24px;
 }
 
+.select-locale {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 .photo {
   width: 100%;
   height: auto;
