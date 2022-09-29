@@ -16,6 +16,7 @@ const App: React.FC = () => {
     const getData = async (): Promise<IData | null> => {
       if (currentLocale === 'en') return mocks.EN;
       if (currentLocale === 'ua') return mocks.ua;
+      if (currentLocale === 'es') return mocks.es;
       return null;
     };
 

@@ -9,6 +9,10 @@ const localization: Record<string, { code: string; title: string }> = {
     code: 'ua',
     title: 'Ukrainian',
   },
+  es: {
+    code: 'es',
+    title: 'Spanish',
+  },
 };
 
 interface IProps {
